@@ -27,166 +27,121 @@ const experiences = [
 ];
 
 // ==================== 課程資料 ====================
-const courses = [
+// 領導經營系列課程推薦
+const leadershipCourses = [
   {
-    title: "生成式AI在土建工程之實務應用",
-    description:
-      "聚焦於如何運用生成式AI 工具,提升工作效率、優化流程與強化工程管理決策支持。",
-    image: "images/生成式AI在土建工程之實務應用.jpg",
-    sessions: [
-      {
-        batch: "第一梯次",
-        date: "03/14、15、21(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8143",
-      },
-      {
-        batch: "第二梯次",
-        date: "10/05、07、09、12、14、16(一三五)",
-        time: "18:30-21:30",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8144",
-      },
-    ],
+    title: "MTP企業管理者才能發展培訓",
+    url: "https://reurl.cc/qK44vN",
+    image: "images/領導經營系列/MTP企業管理者才能發展培訓.jpg",
   },
   {
-    title: "建築工程估價班",
-    description:
-      "培訓建築工程估算人員,以提升營建業在職人員技能水準及服務品質。",
-    image: "images/建築工程估價班.jpg",
-    sessions: [
-      {
-        batch: "第一梯次",
-        date: "03/21、22、23(六日一)",
-        time: "08:30-17:30",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8130",
-      },
-      {
-        batch: "第二梯次",
-        date: "10/17、18、19(六日一)",
-        time: "08:30-17:30",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8131",
-      },
-    ],
+    title: "TWI 基層幹部管理能力發展培訓班",
+    url: "https://reurl.cc/MMLL6k",
+    image: "images/領導經營系列/TWI 基層幹部管理能力發展培訓班.jpg",
   },
   {
-    title:
-      "案例式導讀履約管理防禦工事讀本與日本工事寫真計畫導入應用_聚焦在中小規模工程",
-    description:
-      "期望對於中小規模技術顧問與營造業者,就公共工程品質管理事宜與工程法務,建構正確認知以促進品質提升降低作業成本減少爭議。",
-    image:
-      "images/案例式導讀履約管理防禦工事讀本與日本工事寫真計畫導入應用_聚焦在中小規模工程.jpg",
-    sessions: [
-      {
-        batch: "第一梯次",
-        date: "03/28、29(六日)",
-        time: "09:00~17:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8134",
-      },
-      {
-        batch: "第二梯次",
-        date: "10/17、18(六日)",
-        time: "09:00~17:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8135",
-      },
-    ],
+    title: "問題分析與決策(PSDM)能力提昇技巧",
+    url: "https://reurl.cc/vK44QN",
+    image: "images/領導經營系列/問題分析與決策(PSDM)能力提昇技巧.jpg",
   },
   {
-    title: "機水電工程識圖基礎培訓班-視訊課",
-    description: "培訓機水電工程識圖基礎能力,提升工程人員專業技能。",
-    image: "images/機水電工程識圖基礎培訓班.jpg",
-    sessions: [
-      {
-        batch: "第一梯次",
-        date: "04/11、12、18、19(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8138",
-      },
-      {
-        batch: "第二梯次",
-        date: "11/07、08、14、15(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8139",
-      },
-    ],
+    title: "跨領域專案管理與AI協作實務班",
+    url: "https://reurl.cc/xK4435",
+    image: "images/領導經營系列/跨領域專案管理與AI協作實務班.jpg",
   },
   {
-    title: "機水電工程識圖基礎培訓班",
-    description: "培訓機水電工程識圖基礎能力,提升工程人員專業技能。",
-    image: "images/機水電工程識圖基礎培訓班.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "07/04、05、11、12(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8140",
-      },
-    ],
+    title: "AI 革命：把 SOP 從紙上談兵變成企業戰鬥力",
+    url: "https://reurl.cc/xK44aL",
+    image: "images/領導經營系列/AI 革命：把 SOP 從紙上談兵變成企業戰鬥力.jpg",
   },
   {
-    title: "建築物室內裝修工程管理實務班",
-    description: "培訓室內裝修工程管理實務能力,提升專業技能與管理水準。",
-    image: "images/建築物室內裝修工程管理實務班.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "08/15、16、22、23(六日)",
-        time: "08:30-17:30",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8132",
-      },
-    ],
+    title: "企業績效管理實務",
+    url: "https://reurl.cc/vK44pN",
+    image: "images/領導經營系列/企業績效管理實務.jpg",
   },
   {
-    title: "建築結構施工(低碳建築+基礎+模板+鋼筋+混凝土)",
-    description:
-      "深入學習建築結構施工技術,涵蓋低碳建築、基礎、模板、鋼筋與混凝土等專業知識。",
-    image: "images/4.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "07/18、19、25(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8142",
-      },
-    ],
+    title: "教練式領導與團隊帶領：帶人帶心的高效對話與行動術",
+    url: "https://reurl.cc/W8MMOx",
+    image: "images/領導經營系列/教練式領導與團隊帶領：帶人帶心的高效對話與行動術.jpg",
   },
   {
-    title: "建築識圖與估價實務班",
-    description: "培訓建築識圖與估價實務能力,提升工程專業技能。",
-    image: "images/建築識圖與估價實務班.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "04/12、18、19、25、26(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8141",
-      },
-    ],
+    title: "風險分析與危機管理培訓",
+    url: "https://reurl.cc/LQLLa7",
+    image: "images/領導經營系列/風險分析與危機管理培訓.jpg",
   },
   {
-    title: "施工進度管理",
-    description: "學習施工進度管理技巧,掌握專案時程控制與協調能力。",
-    image: "images/施工進度管理.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "06/27、28(六日)",
-        time: "09:00~17:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8133",
-      },
-    ],
+    title: "簡報技巧與口才訓練",
+    url: "https://reurl.cc/nl44yn",
+    image: "images/領導經營系列/簡報技巧與口才訓練.jpg",
+  },
+];
+
+// 生品管系列課程推薦
+const qualityCourses = [
+  {
+    title: "IATF 16949 六大核心工具應用實務研習班",
+    url: "https://reurl.cc/DbE1Lj",
+    image: "images/生品管系列/IATF 16949 六大核心工具應用實務研習班.jpg",
   },
   {
-    title: "機水電工程估價人員培訓班",
-    description: "培訓機水電工程估價專業能力,提升工程估算技能與服務品質。",
-    image: "images/機水電工程估價人員培訓班.jpg",
-    sessions: [
-      {
-        batch: "",
-        date: "06/06、07、14(六日)",
-        time: "09:00-16:00",
-        url: "https://store.cpc.org.tw/Train/Contents/TC8136",
-      },
-    ],
+    title: "ISO9001及IATF 16949 量測儀器校正管理實務",
+    url: "https://reurl.cc/zKEyLy",
+    image: "images/生品管系列/ISO9001及IATF 16949 量測儀器校正管理實務.jpg",
+  },
+  {
+    title: "ISO文件管理及標準化建立技巧研習班",
+    url: "https://reurl.cc/DbE17E",
+    image: "images/生品管系列/ISO文件管理及標準化建立技巧研習班.jpg",
+  },
+  {
+    title: "ISO 9001:2015 內部稽核實務",
+    url: "https://reurl.cc/oKADAq",
+    image: "images/生品管系列/ISO 90012015 內部稽核實務.jpg",
+  },
+  {
+    title: "IATF 16949:2016 內部稽核員培訓",
+    url: "https://reurl.cc/zKEyEy",
+    image: "images/生品管系列/IATF 169492016 內部稽核員培訓.jpg",
+  },
+  {
+    title: "VDA 6.3:2023製程稽核人員訓練",
+    url: "https://reurl.cc/QVxpo9",
+    image: "images/生品管系列/VDA 6.32023製程稽核人員訓練.jpg",
+  },
+  {
+    title: "企業流程標準化(SOP)建立與改善實務",
+    url: "https://reurl.cc/LQq1oy",
+    image: "images/生品管系列/企業流程標準化(SOP)建立與改善實務.jpg",
+  },
+  {
+    title: "精實生產管理-7大浪費鑑別與改善",
+    url: "https://reurl.cc/dqArbg",
+    image: "images/生品管系列/精實生產管理-7大浪費鑑別與改善.jpg",
+  },
+  {
+    title: "DOE實驗設計",
+    url: "https://reurl.cc/k8g5Qx",
+    image: "images/生品管系列/DOE實驗設計.jpg",
+  },
+  {
+    title: "如何做好現場管理與改善",
+    url: "https://reurl.cc/xKADbL",
+    image: "images/生品管系列/如何做好現場管理與改善.jpg",
+  },
+  {
+    title: "豐田式生產管理",
+    url: "https://reurl.cc/XayXr7",
+    image: "images/生品管系列/豐田式生產管理.jpg",
+  },
+  {
+    title: "7S管理實務(5S+安全+節約)",
+    url: "https://reurl.cc/gn1vEQ",
+    image: "images/生品管系列/7S管理實務(5S+安全+節約).jpg",
+  },
+  {
+    title: "六標準差綠帶訓練",
+    url: "https://reurl.cc/aMAlDZ",
+    image: "images/生品管系列/六標準差綠帶訓練.jpg",
   },
 ];
 
@@ -213,46 +168,53 @@ function renderExperiences() {
 function renderCourses() {
   const coursesGrid = document.getElementById("coursesGrid");
 
-  courses.forEach((course, index) => {
-    const courseCard = document.createElement("div");
-    courseCard.className = "course-card";
-    courseCard.style.animationDelay = `${index * 0.1}s`;
-
-    // 生成梯次資訊 HTML
-    const sessionsHTML = course.sessions
-      .map(
-        (session) => `
-            <div class="session-item">
-                <div class="session-info">
-                    <span class="session-batch">${session.batch}</span>
-                    <div class="session-date-time">
-                        <span class="session-date">📅 ${session.date}</span>
-                        <span class="session-time">⏰ ${session.time}</span>
-                    </div>
-                </div>
-                <div class="session-action">
-                    <a href="${session.url}" target="_blank" class="session-link">立即報名</a>
-                </div>
-            </div>
-        `
-      )
-      .join("");
-
-    courseCard.innerHTML = `
+  // 生成領導經營系列課程區塊
+  const leadershipSection = document.createElement("div");
+  leadershipSection.className = "course-section";
+  leadershipSection.innerHTML = `
+    <h3 class="course-category-title">領導經營系列課程推薦</h3>
+    <div class="course-list">
+      ${leadershipCourses
+        .map(
+          (course) => `
+        <div class="course-item">
+          <a href="${course.url}" target="_blank" class="course-link">
             <div class="course-image">
-                <img src="${course.image}" alt="${course.title}" />
+              <img src="${course.image}" alt="${course.title}" />
             </div>
-            <div class="course-content">
-                <h3 class="course-title">${course.title}</h3>
-                <p class="course-description">${course.description}</p>
-                <div class="course-sessions">
-                    ${sessionsHTML}
-                </div>
-            </div>
-        `;
+            <div class="course-title-text">${course.title}</div>
+          </a>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(leadershipSection);
 
-    coursesGrid.appendChild(courseCard);
-  });
+  // 生成生品管系列課程區塊
+  const qualitySection = document.createElement("div");
+  qualitySection.className = "course-section";
+  qualitySection.innerHTML = `
+    <h3 class="course-category-title">生品管系列課程推薦</h3>
+    <div class="course-list">
+      ${qualityCourses
+        .map(
+          (course) => `
+        <div class="course-item">
+          <a href="${course.url}" target="_blank" class="course-link">
+            <div class="course-image">
+              <img src="${course.image}" alt="${course.title}" />
+            </div>
+            <div class="course-title-text">${course.title}</div>
+          </a>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(qualitySection);
 }
 
 // ==================== 平滑滾動效果 ====================
@@ -293,7 +255,7 @@ function initScrollAnimations() {
 
   // 觀察所有需要動畫的元素
   const animatedElements = document.querySelectorAll(
-    ".experience-item, .course-card"
+    ".experience-item, .course-section"
   );
   animatedElements.forEach((el) => {
     el.style.opacity = "0";
@@ -338,5 +300,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log("✅ 網站已成功載入!");
   console.log(`📚 共載入 ${experiences.length} 項經歷`);
-  console.log(`🎓 共載入 ${courses.length} 門課程`);
+  console.log(`🎓 領導經營系列課程: ${leadershipCourses.length} 門`);
+  console.log(`🎓 生品管系列課程: ${qualityCourses.length} 門`);
 });
