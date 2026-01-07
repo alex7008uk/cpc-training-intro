@@ -62,7 +62,8 @@ const leadershipCourses = [
   {
     title: "教練式領導與團隊帶領：帶人帶心的高效對話與行動術",
     url: "https://reurl.cc/W8MMOx",
-    image: "images/領導經營系列/教練式領導與團隊帶領：帶人帶心的高效對話與行動術.jpg",
+    image:
+      "images/領導經營系列/教練式領導與團隊帶領：帶人帶心的高效對話與行動術.jpg",
   },
   {
     title: "風險分析與危機管理培訓",
@@ -105,7 +106,7 @@ const qualityCourses = [
   },
   {
     title: "VDA 6.3:2023製程稽核人員訓練",
-    url: "https://reurl.cc/QVxpo9",
+    url: "https://reurl.cc/MMVVRk",
     image: "images/生品管系列/VDA 6.32023製程稽核人員訓練.jpg",
   },
   {
