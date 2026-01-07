@@ -106,7 +106,7 @@ const qualityCourses = [
   },
   {
     title: "VDA 6.3:2023製程稽核人員訓練",
-    url: "https://reurl.cc/MMVVRk",
+    url: "https://cpctpi-my.sharepoint.com/:b:/g/personal/03307_cpc_org_tw/IQD05UOkqgR4TJv95MisMGowAXJkSdxXC0oXbzoRu7nsshE?e=dBV3DM",
     image: "images/生品管系列/VDA 6.32023製程稽核人員訓練.jpg",
   },
   {
