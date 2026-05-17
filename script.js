@@ -146,6 +146,15 @@ const qualityCourses = [
   },
 ];
 
+// 數位系列課程
+const digitalCourses = [
+  {
+    title: "數位系列課程",
+    url: "https://cpctpi-my.sharepoint.com/:b:/g/personal/03307_cpc_org_tw/IQBzLweNjdaWTafH0L3pjQPSAaNyijDRe7ElJE_4MpEdKOE?e=jJ0R5n",
+    image: "images/數位系列/數位系列課程.jpg",
+  },
+];
+
 // ==================== 生成經歷區塊 ====================
 function renderExperiences() {
   const aboutContent = document.getElementById("aboutContent");
@@ -216,6 +225,30 @@ function renderCourses() {
     </div>
   `;
   coursesGrid.appendChild(qualitySection);
+
+  // 生成數位系列課程區塊
+  const digitalSection = document.createElement("div");
+  digitalSection.className = "course-section";
+  digitalSection.innerHTML = `
+    <h3 class="course-category-title">數位系列課程推薦</h3>
+    <div class="course-list">
+      ${digitalCourses
+        .map(
+          (course) => `
+        <div class="course-item">
+          <a href="${course.url}" target="_blank" class="course-link">
+            <div class="course-image">
+              <img src="${course.image}" alt="${course.title}" />
+            </div>
+            <div class="course-title-text">${course.title}</div>
+          </a>
+        </div>
+      `
+        )
+        .join("")}
+    </div>
+  `;
+  coursesGrid.appendChild(digitalSection);
 }
 
 // ==================== 平滑滾動效果 ====================
